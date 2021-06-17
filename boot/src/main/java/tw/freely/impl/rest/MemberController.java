@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tw.freely.impl.model.Member;
 
 @RestController
-@RequestMapping(value = "/members", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE )
+@RequestMapping(value = "/members", produces = MediaType.APPLICATION_JSON_VALUE)
 public class MemberController {
 
 	private static Map<Integer,Member> members = new HashMap<>();
