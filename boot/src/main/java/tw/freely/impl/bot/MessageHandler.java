@@ -7,7 +7,7 @@ import com.linecorp.bot.model.message.TextMessage;
 import com.linecorp.bot.spring.boot.annotation.EventMapping;
 import com.linecorp.bot.spring.boot.annotation.LineMessageHandler;
 
-@LineMessageHandler
+
 public class MessageHandler {
 	@EventMapping
 	public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
