@@ -2,8 +2,6 @@ package tw.freely.impl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import com.linecorp.bot.model.event.Event;
 import com.linecorp.bot.model.event.MessageEvent;
@@ -23,11 +21,12 @@ public class Boot{
 	@EventMapping
 	public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
 		System.out.println("event: " + event);
-		return new TextMessage(event.getMessage().getText());
+		return new TextMessage("456");
 	}
+	
 
-	@EventMapping
-	public void handleDefaultMessageEvent(Event event) {
-		System.out.println("event: " + event);
-	}
+//	@EventMapping
+//	public void handleDefaultMessageEvent(Event event) {
+//		System.out.println("event: " + event);
+//	}
 }
